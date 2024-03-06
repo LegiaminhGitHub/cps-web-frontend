@@ -1,0 +1,70 @@
+[debug] [2024-02-11T12:35:24.820Z] ----------------------------------------------------------------------
+[debug] [2024-02-11T12:35:24.830Z] Command:       D:\Node.JS\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-11T12:35:24.831Z] CLI Version:   13.2.1
+[debug] [2024-02-11T12:35:24.831Z] Platform:      win32
+[debug] [2024-02-11T12:35:24.832Z] Node Version:  v20.10.0
+[debug] [2024-02-11T12:35:24.832Z] Time:          Sun Feb 11 2024 19:35:24 GMT+0700 (Indochina Time)
+[debug] [2024-02-11T12:35:24.833Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-11T12:35:24.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-11T12:35:24.845Z] > authorizing via signed-in user (legiaminhoffice@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\cps_test
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-11T12:36:19.485Z] > refreshing access token with scopes: []
+[debug] [2024-02-11T12:36:19.490Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-11T12:36:19.491Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-11T12:36:19.868Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-11T12:36:19.868Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-11T12:36:19.890Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-11T12:36:20.530Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-11T12:36:20.530Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project click-per-second-web (click-per-second-web) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-02-11T12:36:24.940Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-02-11T12:36:24.940Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/click-per-second-web
+[debug] [2024-02-11T12:36:26.470Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com 200
+[debug] [2024-02-11T12:36:26.470Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-02-11T12:36:26.472Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-02-11T12:36:26.473Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/click-per-second-web
+[debug] [2024-02-11T12:36:27.076Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-02-11T12:36:27.076Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-02-11T12:36:37.089Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-02-11T12:36:37.090Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/click-per-second-web
+[debug] [2024-02-11T12:36:38.442Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com 200
+[debug] [2024-02-11T12:36:38.442Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/click-per-second-web/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-02-11T12:36:38.451Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/click-per-second-web [none]
+[debug] [2024-02-11T12:36:38.834Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/click-per-second-web 200
+[debug] [2024-02-11T12:36:38.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/click-per-second-web {"projectId":"click-per-second-web","projectNumber":"1008685140912","displayName":"click-per-second-web","name":"projects/click-per-second-web","resources":{"hostingSite":"click-per-second-web"},"state":"ACTIVE","etag":"1_2d55f0c5-708a-4a63-b941-5682248a92a7"}
+[debug] [2024-02-11T12:37:19.750Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances databaseId=click-per-second-web-default-rtdb&validateOnly=true
+[debug] [2024-02-11T12:37:19.750Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2024-02-11T12:37:21.249Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances 200
+[debug] [2024-02-11T12:37:21.249Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances {"name":"projects/1008685140912/locations/asia-southeast1/instances/click-per-second-web-default-rtdb","project":"projects/1008685140912","databaseUrl":"https://click-per-second-web-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-02-11T12:37:21.252Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances databaseId=click-per-second-web-default-rtdb
+[debug] [2024-02-11T12:37:21.252Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2024-02-11T12:37:21.861Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances 200
+[debug] [2024-02-11T12:37:21.861Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/click-per-second-web/locations/asia-southeast1/instances {"name":"projects/1008685140912/locations/asia-southeast1/instances/click-per-second-web-default-rtdb","project":"projects/1008685140912","databaseUrl":"https://click-per-second-web-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
